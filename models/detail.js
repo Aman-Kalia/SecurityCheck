@@ -7,25 +7,25 @@ const productSchema =new mongoose.Schema({
     },
     email:{
         type:String,
-        // required:true
+        required:true
     },
     phoneNo:{
         type:Number,
-        // required:true,
+        required:true,
         min:10
     },
-    entryTime:{
-        type:Date,
-        // required:true,
-        default:Date.now
-    },
-    leaveTime:{
-        type:String,
-        // required:true
-    },
-    isAvailable:{
-        type:Boolean,
-    }
+//     entryTime:{
+//         type:Date,
+//         required:true,
+// //         default:Date.now
+//     },
+//     leaveTime:{
+//         type:String,
+//         // required:true
+//     },
+//     isAvailable:{
+//         type:Boolean,
+//     }
 });
 
 const Product=mongoose.model('Product',productSchema);
